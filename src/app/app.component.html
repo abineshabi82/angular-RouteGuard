@@ -1,0 +1,12 @@
+<button routerLink='/demo'>click to navigate</button>
+<p>
+  Start editing to see some magic happen :){{sharedData}}
+  
+</p>
+<h4 *ngFor="let x of obj|filter:'female'">
+    {{x.name}}
+  </h4>
+  <h4 *ngFor="let x of obj">
+    {{x.name}}
+  </h4>
+  <router-outlet></router-outlet>
